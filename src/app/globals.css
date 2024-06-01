@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p { 
+   @apply text-3xl bg-purple-400 hover:bg-purple-300 px-4 font-sans mx-6 text-black hover:text-white transition;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +23,7 @@
 }
 
 body {
+  font-family: 'Gortem', 'sans-serif';
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +37,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+
+  
 }
